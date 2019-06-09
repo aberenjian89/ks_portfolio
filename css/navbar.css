@@ -27,6 +27,7 @@
 }
 .active{
   border-bottom: 2px solid #F27630;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 576px) {
