@@ -1,10 +1,12 @@
-.wrapper{
+.wrapper {
   margin-top: 8rem;
 }
 
-.services{
-  width: 123px;
-  height: 123px;
+.services {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background-color: #EF7F18;
+  background-color: #ef7f18;
+  display: flex;
+  justify-content: center;
 }
