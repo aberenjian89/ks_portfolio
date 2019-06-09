@@ -1,0 +1,49 @@
+.wrapper{
+  background: linear-gradient(180deg, rgba(27, 25, 25, 0.53) 0%, rgba(44, 42, 42, 0.77) 100%), url('../assets/home-office.jpg'), #C4C4C4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 100vh;
+  background-size: cover;
+  position: relative
+}
+
+.header-wrapper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header-wrapper .row{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.last-name{
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  color: #F27C4A;
+}
+
+.intro{
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  color: #F2F2F2;
+}
+
+.sub-intro{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #F2F2F2;
+}
