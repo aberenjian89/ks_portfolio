@@ -1,0 +1,10 @@
+.wrapper{
+  margin-top: 8rem;
+}
+
+.services{
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  background-color: #EF7F18;
+}
