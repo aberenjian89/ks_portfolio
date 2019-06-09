@@ -10,3 +10,78 @@
   display: flex;
   justify-content: center;
 }
+
+.sub-head{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.profile-picture{
+  background: url('../assets/Ali_Berenjian_2.jpg');
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-description{
+  width: 350px;
+}
+
+.p-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.p-wrapper .progress{
+  height: 5px;
+  background: #E5E5E5;
+  position: relative
+}
+
+.intro{
+  justify-content: space-between;
+}
+
+
+.ror{
+  background: #ef7f18;
+  width: 350px;
+}
+
+.nodejs{
+  background: #ef7f18;
+  width: 280px;
+}
+
+.js{
+  background: #ef7f18;
+  width: 300px;
+}
+
+.react{
+  background: #ef7f18;
+  width: 340px;
+}
+
+.angular{
+  background: #ef7f18;
+  width: 250px;
+}
+
+.html{
+  background: #ef7f18;
+  width: 350px;
+}
+
+.css{
+  background: #ef7f18;
+  width: 400px;
+}
