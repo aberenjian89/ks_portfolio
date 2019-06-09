@@ -1,5 +1,8 @@
 .wrapper {
-  margin-top: 8rem;
+  margin-top: 6rem;
+}
+.services-wrapper{
+  margin: 1rem
 }
 
 .services {
@@ -21,6 +24,15 @@
   width: 150px;
 }
 
+.about-wrapper{
+  margin-top: 2rem;
+}
+
+.profile-wrapper{
+  justify-content: center;
+  align-items: center;
+}
+
 .profile-picture{
   background: url('../assets/Ali_Berenjian_2.jpg');
   width: 200px;
@@ -32,7 +44,13 @@
 }
 
 .profile-description{
-  width: 350px;
+  text-align: center;
+}
+
+.skill-wrapper{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-height: 300px;
 }
 
 .p-wrapper{
@@ -53,35 +71,135 @@
 
 .ror{
   background: #ef7f18;
-  width: 350px;
+  width: 250px;
 }
 
 .nodejs{
   background: #ef7f18;
-  width: 280px;
+  width: 200px;
 }
 
 .js{
   background: #ef7f18;
-  width: 300px;
+  width: 228px;
 }
 
 .react{
   background: #ef7f18;
-  width: 340px;
+  width: 240px;
 }
 
 .angular{
   background: #ef7f18;
-  width: 250px;
+  width: 170px;
 }
 
 .html{
   background: #ef7f18;
-  width: 350px;
+  width: 250px;
 }
 
 .css{
   background: #ef7f18;
-  width: 400px;
+  width: 280px;
+}
+
+@media (min-width: 576px){
+  .ror{
+    background: #ef7f18;
+    width: 550px;
+  }
+  
+  .nodejs{
+    background: #ef7f18;
+    width: 400px;
+  }
+  
+  .js{
+    background: #ef7f18;
+    width: 450px;
+  }
+  
+  .react{
+    background: #ef7f18;
+    width: 520px;
+  }
+  
+  .angular{
+    background: #ef7f18;
+    width: 350px;
+  }
+  
+  .html{
+    background: #ef7f18;
+    width: 550px;
+  }
+  
+  .css{
+    background: #ef7f18;
+    width: 600px;
+  }
+}
+
+
+@media (min-width: 992px){
+  .wrapper {
+    margin-top: 8rem;
+  }
+  .services-wrapper{
+    margin: 0;
+  }
+  .about-wrapper{
+    margin-top: 3rem;
+  }
+  .profile-wrapper{
+    margin-left: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .profile-description{
+    text-align: left;
+    width: 350px
+  }
+  .skill-wrapper{
+    margin: 0;
+  }
+
+  .ror{
+    background: #ef7f18;
+    width: 350px;
+  }
+  
+  .nodejs{
+    background: #ef7f18;
+    width: 260px;
+  }
+  
+  .js{
+    background: #ef7f18;
+    width: 300px;
+  }
+  
+  .react{
+    background: #ef7f18;
+    width: 340px;
+  }
+  
+  .angular{
+    background: #ef7f18;
+    width: 250px;
+  }
+  
+  .html{
+    background: #ef7f18;
+    width: 350px;
+  }
+  
+  .css{
+    background: #ef7f18;
+    width: 400px;
+  }
+  
+
+
 }
