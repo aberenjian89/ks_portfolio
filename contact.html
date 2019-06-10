@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/navbar_non_index.css" />
-    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <style>
       body {
         font-family: "Poppins", sans-serif;
@@ -48,25 +48,34 @@
             <a class="nav-item nav-link" href="./about.html"
               ><span>About</span></a
             >
-            <a class="nav-item nav-link" href="./projects.html"><span class="active">Projects</span></a>
-            <a class="nav-item nav-link" href="./contact.html"><span>Contact</span></a>
+            <a class="nav-item nav-link" href="./projects.html"><span>Projects</span></a>
+            <a class="nav-item nav-link" href="./contact.html"><span class="active">Contact</span></a>
           </div>
         </div>
       </div>
     </nav>
     <div class="container wrapper mb-3">
-      <div class="row">
-        <div class="col-lg-4 project">
-            <img src="./assets/help_desk.png" class="img-thumbnail"/>
+      <div class="row  main-wrapper mb-5">
+        <div class="col-lg-6">
+          <div class="contact-header">Let's Connect!</div>
         </div>
-        <div class="col-lg-4 project">
-            <img src="./assets/leanterms.png" class="img-thumbnail"/>
+        <div class="col-lg-6 d-flex justify-content-center social-icons">
+            <img src="./assets/github.svg" class="img-fluid"/>
+            <img src="./assets/linkedin.svg" class="img-fluid"/>
         </div>
-        <div class="col-lg-4 project">
-          <img src="./assets/pexcel.png" class="img-thumbnail"/>
+      </div>
+      <div class="row form-container">
+        <div class="col-lg-12 input-container">
+            <input name="full_name" type="text" placeholder="Your Name" class="input-wrapper">    
         </div>
-        <div class="col-lg-4 project-coming-soon d-flex flex-column justify-content-center align-items-center">
-           <div class="coming-soon">Coming Soon!</div>
+        <div class="col-lg-12 input-container">
+            <input name="email" type="text" placeholder="Your Email" class="input-wrapper">    
+        </div>
+        <div class="col-lg-12 input-container">
+            <textarea rows="5" name="message" placeholder="Your Message" class="input-wrapper"></textarea>
+        </div>
+        <div class="col-lg-12 button-wrapper">
+          <button class="send-button">Send</button>
         </div>
       </div>
     </div>
