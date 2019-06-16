@@ -1,0 +1,61 @@
+.navbar{
+  background-color: #F2F2F2;
+}
+
+.navbar-toggler-icon{
+  background: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=000000');
+  width: 2.0rem;
+}
+
+.navbar-brand{
+  color: #000000 !important;
+  font-size: 36px;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.navbar-nav a{
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+}
+.navbar-nav a:hover{
+  color:  #F27630;
+}
+.active{
+  border-bottom: 2px solid #F27630;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  
+}
+
+ /* @media (min-width: 768px) { ... } */
+
+@media (min-width: 992px) { 
+  .navbar{
+    background-color:  transparent;
+    color: #F2F2F2;
+  }
+  .navbar-brand{
+    color: #F2F2F2 !important;
+    font-size: 36px;
+  }
+  .navbar-collapse{
+    justify-content: flex-end;
+  }
+  .navbar-nav a{
+    color: #F2F2F2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+  
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }  */
