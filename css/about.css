@@ -1,11 +1,11 @@
-.wrapper {
+.about-main-wrapper {
   margin-top: 6rem;
 }
-.services-wrapper{
+.about-services-wrapper{
   margin: 1rem
 }
 
-.services {
+.about-services {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.sub-head{
+.about-sub-head{
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -28,12 +28,12 @@
   margin-top: 2rem;
 }
 
-.profile-wrapper{
+.about-profile-wrapper{
   justify-content: center;
   align-items: center;
 }
 
-.profile-picture{
+.about-profile-picture{
   background: url('../assets/Ali_Berenjian_2.jpg');
   width: 200px;
   height: 200px;
@@ -43,99 +43,99 @@
   background-repeat: no-repeat;
 }
 
-.profile-description{
+.about-profile-description{
   text-align: center;
 }
 
-.skill-wrapper{
+.about-skill-wrapper{
   margin-top: 2rem;
   margin-bottom: 2rem;
   min-height: 300px;
 }
 
-.p-wrapper{
+.about-p-wrapper{
   display: flex;
   flex-direction: column;
 }
 
-.p-wrapper .progress{
+.about-p-wrapper .progress{
   height: 5px;
   background: #E5E5E5;
   position: relative
 }
 
-.intro{
+.about-intro{
   justify-content: space-between;
 }
 
 
-.ror{
+.about-ror{
   background: #ef7f18;
   width: 250px;
 }
 
-.nodejs{
+.about-nodejs{
   background: #ef7f18;
   width: 200px;
 }
 
-.js{
+.about-js{
   background: #ef7f18;
   width: 228px;
 }
 
-.react{
+.about-react{
   background: #ef7f18;
   width: 240px;
 }
 
-.angular{
+.about-angular{
   background: #ef7f18;
   width: 170px;
 }
 
-.html{
+.about-html{
   background: #ef7f18;
   width: 250px;
 }
 
-.css{
+.about-css{
   background: #ef7f18;
   width: 280px;
 }
 
 @media (min-width: 576px){
-  .ror{
+  .about-ror{
     background: #ef7f18;
     width: 550px;
   }
   
-  .nodejs{
+  .about-nodejs{
     background: #ef7f18;
     width: 400px;
   }
   
-  .js{
+  .about-js{
     background: #ef7f18;
     width: 450px;
   }
   
-  .react{
+  .about-react{
     background: #ef7f18;
     width: 520px;
   }
   
-  .angular{
+  .about-angular{
     background: #ef7f18;
     width: 350px;
   }
   
-  .html{
+  .about-html{
     background: #ef7f18;
     width: 550px;
   }
   
-  .css{
+  .about-css{
     background: #ef7f18;
     width: 600px;
   }
@@ -143,60 +143,60 @@
 
 
 @media (min-width: 992px){
-  .wrapper {
+  .about-main-wrapper {
     margin-top: 8rem;
   }
-  .services-wrapper{
+  .about-services-wrapper{
     margin: 0;
   }
   .about-wrapper{
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  .profile-wrapper{
+  .about-profile-wrapper{
     margin-left: 3rem;
     justify-content: flex-start;
     align-items: flex-start;
   }
-  .profile-description{
+  .about-profile-description{
     text-align: left;
     width: 350px
   }
-  .skill-wrapper{
+  .about-skill-wrapper{
     margin: 0;
   }
 
-  .ror{
+  .about-ror{
     background: #ef7f18;
     width: 350px;
   }
   
-  .nodejs{
+  .about-nodejs{
     background: #ef7f18;
     width: 260px;
   }
   
-  .js{
+  .about-js{
     background: #ef7f18;
     width: 300px;
   }
   
-  .react{
+  .about-react{
     background: #ef7f18;
     width: 340px;
   }
   
-  .angular{
+  .about-angular{
     background: #ef7f18;
     width: 250px;
   }
   
-  .html{
+  .about-html{
     background: #ef7f18;
     width: 350px;
   }
   
-  .css{
+  .about-css{
     background: #ef7f18;
     width: 400px;
   }
