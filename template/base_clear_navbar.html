@@ -6,7 +6,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Home</title>
+    <title>{{title}}</title>
     <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -100,7 +100,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="./index.html"
-                ><span class="active" >Home</span></a
+                ><span {{active_home}} >Home</span></a
                 >
                 <a class="nav-item nav-link" href="./about.html"
                 ><span {{active_about}} >About</span></a
@@ -113,22 +113,7 @@
         </div>
     </div>
 </nav>
-
-      <div class="container-fluid index-wrapper img-fluid">
-        <div class="container index-header-wrapper">
-          <div class="row">
-              <div class="col-lg-10 align-self-end index-sub-header">
-                <div class="index-intro">Hello,I'm Ali<span class="index-last-name"> Berenjian</span></div>
-              </div>
-              <div class="col-lg-10 align-self-end index-sub-header">
-                <div class="index-sub-intro">
-                  Freelancer-Web Developer-Full Stack
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-
+{{content}}
 <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
