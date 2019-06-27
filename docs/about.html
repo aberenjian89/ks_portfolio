@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Ali Berenjian</title>
+    <title>About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="./css/navbar.css">-->
@@ -79,14 +79,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./index.html"><span class="">Home</span></a>
-                <a class="nav-item nav-link animsition-link" href="./about.html"><span>About</span></a>
-                <a class="nav-item nav-link animsition-link" href="./projects.html"><span>Projects</span></a>
+                <a class="nav-item nav-link" href="./index.html"><span {{active_home}} >Home</span></a>
+                <a class="nav-item nav-link animsition-link" href="./about.html"><span class="active" >About</span></a>
+                <a class="nav-item nav-link animsition-link" href="./projects.html"><span {{active_projects}} >Projects</span></a>
                 <!-- <a class="nav-item nav-link animsition-link" href="./contact.html"><span>Contact</span></a> -->
             </div>
         </div>
     </div>
-</nav><div class="container about-main-wrapper">
+</nav>
+<div class="container about-main-wrapper">
   <div class="row">
     <div
       class="col-lg-3 d-flex flex-column justify-content-center align-items-center about-services-wrapper"
@@ -208,6 +209,7 @@
     </div>
   </div>
 </div>
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
