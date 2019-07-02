@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Projects</title>
+    <title>{{ title }}</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -53,7 +53,28 @@
           border-bottom: 2px solid #F27630;
           padding-bottom: 10px;
       }
-      
+      {% if title == 'Home' %}
+        @media (min-width: 992px) {
+            .navbar{
+                  background-color:  transparent;
+                  color: #F2F2F2;
+              }
+              .navbar-brand{
+                  color: #F2F2F2 !important;
+                  font-size: 36px;
+              }
+              .navbar-collapse{
+                  justify-content: flex-end;
+              }
+              .navbar-nav a{
+                  color: #F2F2F2;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+
+              }
+        }
+      {% else %}
         @media (min-width: 992px) {
                 .navbar{
                     background-color:  #FBF9F9;
@@ -75,7 +96,7 @@
 
                 }
             }
-      
+      {% endif %}
     </style>
   </head>
   <body>
@@ -96,66 +117,32 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <!-- <a class="nav-item nav-link" href="./index.html"
-              ><span >Home</span></a
+              ><span {{active_home}}>Home</span></a
             >
             <a class="nav-item nav-link" href="./about.html"
-              ><span >About</span></a
+              ><span {{active_about}}>About</span></a
             >
             <a class="nav-item nav-link" href="./projects.html"
-              ><span >Projects</span></a
+              ><span {{active_projects}}>Projects</span></a
             > -->
             <!-- <a class="nav-item nav-link" href="./contact.html"><span>Contact</span></a> -->
-            
+            {% for page in pages %}
             <a
               class="nav-item nav-link"
-              href="index.html"
+              href="{{ page['output'].split('/')[1] }}"
             >
-              
-              <span>Home</span>
-              
+              {% if page['title'] == title %}
+              <span class="active">{{ page["title"] }}</span>
+              {% else %}
+              <span>{{ page["title"] }}</span>
+              {% endif %}
             </a>
-            
-            <a
-              class="nav-item nav-link"
-              href="about.html"
-            >
-              
-              <span>About</span>
-              
-            </a>
-            
-            <a
-              class="nav-item nav-link"
-              href="projects.html"
-            >
-              
-              <span class="active">Projects</span>
-              
-            </a>
-            
+            {% endfor %}
           </div>
         </div>
       </div>
     </nav>
-    <div class="container project-wrapper mb-3">
-  <div class="row">
-    <div class="col-lg-4 project">
-      <img src="./assets/help_desk.png" class="img-thumbnail" />
-    </div>
-    <div class="col-lg-4 project">
-      <img src="./assets/leanterms.png" class="img-thumbnail" />
-    </div>
-    <div class="col-lg-4 project">
-      <img src="./assets/pexcel.png" class="img-thumbnail" />
-    </div>
-    <div
-      class="col-lg-4 project-coming-soon d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="coming-soon">Coming Soon!</div>
-    </div>
-  </div>
-</div>
-
+    {{ content }}
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
