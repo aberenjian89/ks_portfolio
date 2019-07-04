@@ -1,119 +1,142 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Home</title>
     <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
     <link
-            href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
     <style>
-        body {
-            font-family: "Poppins", sans-serif;
-        }
-        .navbar{
-            background-color: #F2F2F2;
-        }
+      body {
+          font-family: "Poppins", sans-serif;
+      }
+      .navbar{
+          background-color: #F2F2F2;
+      }
 
-        .navbar-toggler-icon{
-            background: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=000000');
-            width: 2.0rem;
-        }
+      .navbar-toggler-icon{
+          background: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=000000');
+          width: 2.0rem;
+      }
 
-        .navbar-brand{
-            color: #000000 !important;
-            font-size: 36px;
-        }
+      .navbar-brand{
+          color: #000000 !important;
+          font-size: 36px;
+      }
 
-        .navbar-collapse{
-            justify-content: flex-end;
-        }
-        .navbar-nav a{
-            color: #000000;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
+      .navbar-collapse{
+          justify-content: flex-end;
+      }
+      .navbar-nav a{
+          color: #000000;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
 
-        }
-        .navbar-nav a:hover{
-            color:  #F27630;
-        }
-        .active{
-            border-bottom: 2px solid #F27630;
-            padding-bottom: 10px;
-        }
-
-        @media (min-width: 576px) {
-
-        }
-
-        /* @media (min-width: 768px) { ... } */
-
+      }
+      .navbar-nav a:hover{
+          color:  #F27630;
+      }
+      .active{
+          border-bottom: 2px solid #F27630;
+          padding-bottom: 10px;
+      }
+      
         @media (min-width: 992px) {
             .navbar{
-                background-color:  transparent;
-                color: #F2F2F2;
-            }
-            .navbar-brand{
-                color: #F2F2F2 !important;
-                font-size: 36px;
-            }
-            .navbar-collapse{
-                justify-content: flex-end;
-            }
-            .navbar-nav a{
-                color: #F2F2F2;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
+                  background-color:  transparent;
+                  color: #F2F2F2;
+              }
+              .navbar-brand{
+                  color: #F2F2F2 !important;
+                  font-size: 36px;
+              }
+              .navbar-collapse{
+                  justify-content: flex-end;
+              }
+              .navbar-nav a{
+                  color: #F2F2F2;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
 
-            }
+              }
         }
+      
     </style>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
         <a class="navbar-brand">AB</a>
         <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="./index.html"
-                ><span class="active" >Home</span></a
-                >
-                <a class="nav-item nav-link" href="./about.html"
-                ><span {{active_about}} >About</span></a
-                >
-                <a class="nav-item nav-link" href="./projects.html"
-                ><span {{active_projects}} >Projects</span></a
-                >
-                <!-- <a class="nav-item nav-link" href="./contact.html"><span>Contact</span></a> -->
-            </div>
+          <div class="navbar-nav">
+            <!-- <a class="nav-item nav-link" href="./index.html"
+              ><span >Home</span></a
+            >
+            <a class="nav-item nav-link" href="./about.html"
+              ><span >About</span></a
+            >
+            <a class="nav-item nav-link" href="./projects.html"
+              ><span >Projects</span></a
+            > -->
+            <!-- <a class="nav-item nav-link" href="./contact.html"><span>Contact</span></a> -->
+            
+            <a
+              class="nav-item nav-link"
+              href="index.html"
+            >
+              
+              <span class="active">Home</span>
+              
+            </a>
+            
+            <a
+              class="nav-item nav-link"
+              href="about.html"
+            >
+              
+              <span>About</span>
+              
+            </a>
+            
+            <a
+              class="nav-item nav-link"
+              href="projects.html"
+            >
+              
+              <span>Projects</span>
+              
+            </a>
+            
+          </div>
         </div>
-    </div>
-</nav>
-
+      </div>
+    </nav>
+    
       <div class="container-fluid index-wrapper img-fluid">
         <div class="container index-header-wrapper">
           <div class="row">
@@ -129,20 +152,20 @@
         </div>
       </div>
 
-<script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"
-></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
